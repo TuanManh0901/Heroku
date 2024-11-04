@@ -1,6 +1,6 @@
 <?php
 include('connect1.php');
-$sql = $conn->prepare("SELECT * FROM CauHoi ORDER BY RAND() LIMIT 10");
+$sql = $conn->prepare("SELECT * FROM thitn ORDER BY RAND() LIMIT 10");
 $sql->execute();
 
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
